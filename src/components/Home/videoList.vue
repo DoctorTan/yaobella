@@ -1,7 +1,7 @@
 <template>
   <div>
     <van-nav-bar :title="$route.query.title" fixed placeholder left-text="返回" left-arrow @click-left="onClickLeft" />
-    <van-list :finished="finished" finished-text="没有更多了">
+    <van-list v-if="videoList" :finished="finished" finished-text="没有更多了">
       <div class="videoItem" v-for="item in videoList" :key="item.id" @click="ClickVideo(item)">
         <div class="left">
           <div class="time">{{ item.time }}</div>
@@ -22,6 +22,7 @@
 
 
     </van-list>
+    <van-empty v-else image="error" description="我还没录入数据" />
 
   </div>
 </template>

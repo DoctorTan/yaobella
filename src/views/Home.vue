@@ -11,6 +11,7 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue';
+
 // import picture from '@/mock/picture/index.js'
 // import video from '@/mock/video/index.js'
 // console.log(video);
@@ -22,6 +23,7 @@ import { onMounted } from 'vue';
 
 // }
 onMounted(() => {
+
   // console.log('首页加载完成');
   // import('@/views/Discover.vue').then(res => {
   //   console.log(res, '导入成功');

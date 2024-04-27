@@ -375,6 +375,11 @@
   dependencies:
     "ms" "2.1.2"
 
+"deepmerge@^2.0.1":
+  "integrity" "sha512-R9hc1Xa/NOBi9WRVUWg19rl1UB7Tt4kuPd+thNJgFZoxXsTz7ncaPaeIm+40oSGuP33DfMb4sZt1QIGiJzC4EA=="
+  "resolved" "https://registry.npmmirror.com/deepmerge/-/deepmerge-2.2.1.tgz"
+  "version" "2.2.1"
+
 "delegate@^3.2.0":
   "integrity" "sha512-IofjkYBZaZivn0V8nnsMJGBr4jVLxHDheKSW88PyxS5QC4Vo9ZbZVvhzlSxY87fVq3STR6r+4cGepyHkcWOQSw=="
   "resolved" "https://registry.npmmirror.com/delegate/-/delegate-3.2.0.tgz"
@@ -600,6 +605,13 @@
     "universalify" "^2.0.0"
   optionalDependencies:
     "graceful-fs" "^4.1.6"
+
+"lb-audio-v3@^1.0.5":
+  "integrity" "sha512-c7icd35k0aHnMIVpdjq3tJmfCKLf6evRABXlqfsbL1mxsmOeA6rjWQFUGSP4Zu+sWRtAD1w/4dLqkg731lDM/w=="
+  "resolved" "https://registry.npmmirror.com/lb-audio-v3/-/lb-audio-v3-1.0.5.tgz"
+  "version" "1.0.5"
+  dependencies:
+    "vue" "^3.2.25"
 
 "local-pkg@^0.4.3":
   "integrity" "sha512-SFppqq5p42fe2qcZQqqEOiVRXl+WCP1MdT6k7BDEW1j++sp5fIY+/fdRQitvKgB5BrBcmrs5m/L0v2FrU5MY1g=="
@@ -1008,6 +1020,14 @@
   "resolved" "https://registry.npmmirror.com/webpack-virtual-modules/-/webpack-virtual-modules-0.6.1.tgz"
   "version" "0.6.1"
 
+"xgplayer-music@^3.0.16":
+  "integrity" "sha512-aZcNvsKA3Dj3/F/cXtfwAHaMoa1CFjlXYbdvneIycMjuAJhKDeJUShdxJcwCJjptmHYw7OfbMPq7eQdntuAdAg=="
+  "resolved" "https://registry.npmmirror.com/xgplayer-music/-/xgplayer-music-3.0.16.tgz"
+  "version" "3.0.16"
+  dependencies:
+    "deepmerge" "^2.0.1"
+    "eventemitter3" "^4.0.7"
+
 "xgplayer-subtitles@3.0.16":
   "integrity" "sha512-gy9bZnWAMPVga36XgT4EGlh/cPQCvNNutLxggv2DGnNI0GC8RalLaFmI++ijcrruRFPt0d82791kNBj3pdNzRA=="
   "resolved" "https://registry.npmmirror.com/xgplayer-subtitles/-/xgplayer-subtitles-3.0.16.tgz"
@@ -1015,7 +1035,7 @@
   dependencies:
     "eventemitter3" "^4.0.7"
 
-"xgplayer@^3.0.16":
+"xgplayer@^3.0.16", "xgplayer@3.0.16":
   "integrity" "sha512-u8uh/bREtfUywUw700QD9TzjjCIKsVIldGyqI9ubA0aSf/zmGTbdZKMpUlMu86lnnAwhtDdansPZvbrIa0f5Wg=="
   "resolved" "https://registry.npmmirror.com/xgplayer/-/xgplayer-3.0.16.tgz"
   "version" "3.0.16"

@@ -6,4 +6,5 @@
 export {}
 declare global {
   const showImagePreview: typeof import('vant/es')['showImagePreview']
+  const showNotify: typeof import('vant/es')['showNotify']
 }

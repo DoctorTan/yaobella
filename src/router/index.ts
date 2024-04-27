@@ -6,6 +6,7 @@ import { useLoadingStore } from '@/store/loading.js'
 // 每个路由都需要映射到一个组件。
 // 我们后面再讨论嵌套路由。
 const routes = [
+  { name: 'music', path: '/music', component: () => import('@/views/Music.vue'), meta: { 'title': '音乐' }, },
   { name: 'musicAlbum', path: '/musicAlbum', component: () => import('@/views/MusicAlbum.vue'), meta: { 'title': '专辑' }, },
   { name: 'index', path: '/index', component: Home, meta: { 'title': '首页' }, },
   { path: '/', redirect: '/index' },

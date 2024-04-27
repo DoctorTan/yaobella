@@ -2,8 +2,10 @@
   <div class="tablist">
     <van-tabbar v-model="active" @change="onChange">
       <van-tabbar-item name="home" icon="home-o">首页</van-tabbar-item>
+      <van-tabbar-item name="musicAlbum" icon="music-o">专辑</van-tabbar-item>
       <van-tabbar-item name="discover" icon="search">发现</van-tabbar-item>
-      <van-tabbar-item name="musicAlbum" icon="search">专辑</van-tabbar-item>
+
+
 
     </van-tabbar>
   </div>
@@ -11,12 +13,14 @@
 
 <script setup lang="ts">
 import { useRouter } from 'vue-router'
+import { showNotify } from 'vant';
 
 const router = useRouter()
 import { ref } from 'vue';
 const onChange = (index: string) => {
 
 
+  showNotify({ type: 'primary', message: '数据少,在收集中..', duration: 1500, });
 
   if (index === "home") {
     router.push({
@@ -31,6 +35,11 @@ const onChange = (index: string) => {
   else if (index === 'musicAlbum') {
     router.push({
       name: 'musicAlbum'
+    })
+  }
+  else if (index === 'music') {
+    router.push({
+      name: 'music'
     })
   }
 

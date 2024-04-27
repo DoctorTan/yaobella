@@ -16,9 +16,10 @@ onMounted(() => {
   //   fluid: true,
   //   autoplay: true
   // });
+
 })
 onUnmounted(() => {
-  console.log('我被小鬼了');
+  console.log('我被销毁了');
 })
 onActivated(() => {
   let player = new Player({
@@ -26,7 +27,11 @@ onActivated(() => {
     url: route.query.url,
     width: '375px',
     fluid: true,
-    autoplay: true
+    autoplay: true,
+    download: true,
+    poster: 'http://www.yaobella.com/images/carton_q_club_1.png',
+    ignores: ['cssfullscreen']
+
   });
   console.log('组件激活!')
 })

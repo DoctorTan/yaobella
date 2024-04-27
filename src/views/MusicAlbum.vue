@@ -1,7 +1,7 @@
 <template>
   <div>
     <van-list @load="onLoad" style="margin-bottom: 60px;" v-show="flag">
-      <div class="musicAlbumItem" v-for="(item, index) in musicAlbum">
+      <div class="musicAlbumItem" @click="clickMusicAlbumItem" v-for="(item, index) in musicAlbum">
         <div class="img"><van-image class="vimg" :src="item.url" position="center" fit="cover" /></div>
         <div :style="{ marginLeft: '16px' }" class="info">
           <div class="infoItem alnumName">{{ item.name }}</div>
@@ -30,6 +30,12 @@
 <script setup>
 import { ref } from "vue";
 import { musicAlbum } from '@/mock/musicAlbum/index.js'
+import { useRouter } from 'vue-router'
+
+import { showNotify } from 'vant';
+
+const router = useRouter()
+
 console.log(musicAlbum);
 const list = ref([]);
 const loading = ref(false);
@@ -55,6 +61,12 @@ const onLoad = () => {
     // }
   }, 1000);
 };
+// 跳转到专辑播放
+const clickMusicAlbumItem = () => {
+  router.push({
+    name: 'music'
+  })
+}
 </script>
 
 <style scoped>
