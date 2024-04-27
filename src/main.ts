@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
-import './style.css'
+import '@/assets/js/flexible.js'
 import App from './App.vue'
-
-createApp(App).mount('#app')
+import 'xgplayer/dist/index.min.css';
+import router from './router'
+import { createPinia } from 'pinia'
+createApp(App).use(createPinia()).use(router).mount('#app')
