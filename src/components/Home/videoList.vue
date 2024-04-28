@@ -67,10 +67,8 @@ onMounted(() => {
   //   number--
   // }
   requestIdleCallback((leaktime) => {
-    if (leaktime.timeRemaining() > 1)
-      import('@/components/Home/videoPlay.vue').then(res => {
-        // console.log('引入视频组件完成', res);
-      })
+    if (leaktime.timeRemaining() > 1) { }
+
 
   }, { timeout: 3000 })
   onActivated(() => {

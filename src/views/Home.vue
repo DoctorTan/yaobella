@@ -50,7 +50,15 @@ onMounted(() => {
     import('@/views/MusicAlbum.vue').then(res => {
       console.log('MusicAlbum引入完成', res);
     })
-
+    import('@/views/Music.vue').then(res => {
+      console.log('Music引入完成', res);
+    })
+    import('@/components/Home/videoPlay.vue').then(res => {
+      console.log('引入视频组件完成', res);
+    })
+    import('@/components/Home/singleAlbum.vue').then(res => {
+      console.log('引入singleAlbum完成', res);
+    })
 
   }, { timeout: 3000 })
 })

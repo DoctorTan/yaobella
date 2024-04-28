@@ -2,10 +2,10 @@
   <div class="piclist">
     <van-nav-bar :title="($route.query.title as string)" fixed placeholder left-text="返回" left-arrow
       @click-left="onClickLeft" />
-    <van-grid v-if="erjiAlbum" square border clickable :gutter="2" column-num="2">
-      <van-grid-item @click="clickAlbum(item)" v-for="item in erjiAlbum" :key="item.id" icon="photo-o" text="文字">
+    <van-grid @click="clickAlbum" v-if="erjiAlbum" square border clickable :gutter="2" column-num="2">
+      <van-grid-item v-for="item in erjiAlbum" :key="item.id" icon="photo-o" text="文字">
         <div class="albumCoverAndName">
-          <img :src="item.url" />
+          <img :data-AlbumId="item.id" :data-Albumname="item.albumName" :src="item.url" />
           <div class="albumName">{{ item.albumName }}</div>
         </div>
       </van-grid-item>
@@ -17,6 +17,7 @@
 <script setup lang="ts">
 // import life from '@/mock/life.js'
 import { usePictureStore } from '@/store/picture.js'
+import { log } from 'console';
 // import picture from '@/mock/picture/index.js'
 import { onMounted } from "vue";
 import { useRoute, useRouter } from 'vue-router'
@@ -33,28 +34,32 @@ const erjiAlbum = getAlbum(route.params.albumsId);
 
 const router = useRouter()
 const onClickLeft = () => history.back();
-console.log(route.params);//拿到一级相册分类
+// console.log(route.params);
+//拿到一级相册分类
 
 
-const clickAlbum = (item: any) => {
+const clickAlbum = (e: MouseEvent) => {
+  // 拿到自定义事件里面的图片点击事件
+  const target = e.target as HTMLElement
+  // 从e.target.dataset取出自定义属性,我绑定的是id
+  //取值是小写
+  const { albumid, albumname } = target.dataset
 
+  // console.log(route.params);
 
 
   router.push({
-    path: `/album/${route.params.albumsId}`,
+    path: `/album/${albumid}`,
     query: {
-      albumName: item.albumName,
-      albumId: item.id
+      albumName: albumname,
+      albumId: albumid
     }
   })
 }
 
 onMounted(() => {
   requestIdleCallback((leaktime) => {
-    if (leaktime.timeRemaining() > 1)
-      import('@/components/Home/singleAlbum.vue').then(res => {
-        console.log('引入singleAlbum完成', res);
-      })
+    if (leaktime.timeRemaining() > 1) { }
 
   }, { timeout: 3000 })
 })
