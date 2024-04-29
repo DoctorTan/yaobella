@@ -17,7 +17,7 @@
 <script setup lang="ts">
 // import life from '@/mock/life.js'
 import { usePictureStore } from '@/store/picture.js'
-import { log } from 'console';
+
 // import picture from '@/mock/picture/index.js'
 import { onMounted } from "vue";
 import { useRoute, useRouter } from 'vue-router'
