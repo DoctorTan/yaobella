@@ -14,6 +14,8 @@ declare module 'vue' {
     Tabbar: typeof import('./src/components/Tabbar.vue')['default']
     VanBackTop: typeof import('vant/es')['BackTop']
     VanBarrage: typeof import('vant/es')['Barrage']
+    VanCollapse: typeof import('vant/es')['Collapse']
+    VanCollapseItem: typeof import('vant/es')['CollapseItem']
     VanConfigProvider: typeof import('vant/es')['ConfigProvider']
     VanEmpty: typeof import('vant/es')['Empty']
     VanGrid: typeof import('vant/es')['Grid']

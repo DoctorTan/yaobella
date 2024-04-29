@@ -67,7 +67,7 @@ import { useRouter } from 'vue-router'
 // import picture from '@/assets/js/flexible.js'
 import type { TreeSelectItem, TreeSelectChild, } from 'vant';
 // import life from '@/mock/life.js'
-
+import { showDialog } from 'vant';
 // console.log(life);
 
 // console.log(life);
@@ -82,7 +82,11 @@ import type { TreeSelectItem, TreeSelectChild, } from 'vant';
 
 
 
-
+showDialog({
+  message: '开发中,正在和官方人员商量数据',
+}).then(() => {
+  // on close
+});
 const router = useRouter()
 const activeIndex = ref(0);
 

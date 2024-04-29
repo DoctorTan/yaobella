@@ -11,7 +11,7 @@
         </div>
       </div>
     </van-list>
-    <van-skeleton v-for="i in 2" style="padding-bottom: 20px;" v-show="!flag">
+    <van-skeleton v-for="i in 2" style="padding-bottom: 20px;padding: 20px 16px;" v-show="!flag">
       <template #template>
         <div :style="{ display: 'flex', width: '100%' }">
           <van-skeleton-image />
@@ -28,11 +28,16 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
-import { musicAlbum } from '@/mock/musicAlbum/index.js'
+import { ref, reactive } from "vue";
+// import { musicAlbum } from '@/mock/musicAlbum/index.js'
 import { useRouter } from 'vue-router'
-
+import { useMusicAlbumStore } from '@/store/musicAlbum.js'
 import { showNotify } from 'vant';
+// 引入音乐专辑列表
+const MusicAlbumStore = useMusicAlbumStore()
+console.log(MusicAlbumStore);
+const { musicAlbum } = MusicAlbumStore
+
 
 const router = useRouter()
 

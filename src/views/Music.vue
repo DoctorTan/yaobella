@@ -9,7 +9,13 @@
 import lbAudio from 'lb-audio-v3';
 // 引入组件样式
 import 'lb-audio-v3/style'
-
+import { showDialog } from 'vant';
+showDialog({
+  message: '音乐接口失效中',
+  theme: 'round-button',
+}).then(() => {
+  // on close
+});
 const musicList = [
   {
     name: '梦里开的花',

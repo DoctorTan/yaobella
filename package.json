@@ -16,6 +16,7 @@
     "vant": "^4.8.11",
     "vue": "^3.4.21",
     "vue-router": "^4.3.2",
+    "vue-virtual-scroller": "^2.0.0-beta.8",
     "xgplayer": "^3.0.16",
     "xgplayer-music": "^3.0.16"
   },

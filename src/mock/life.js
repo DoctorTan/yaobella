@@ -64,6 +64,36 @@ const life = [
     id: 14,
     albumName: '全家福'
   },
+  {
+    url: 'http://www.yaobella.com/photo/picture/thrumb/1467613163515',
+    id: 99,
+    albumName: '姚贝娜20100922博客照片'
+  },
+  {
+    url: 'http://www.yaobella.com/photo/picture/thrumb/1467611632863',
+    id: 109,
+    albumName: '娜姐生日party SD萱萱 沙宝亮 羽泉到场 20100927博客照片'
+  },
+  {
+    url: 'http://www.yaobella.com/photo/picture/thrumb/1467617229645',
+    id: 191,
+    albumName: '出席金池婚礼'
+  },
+  {
+    url: 'http://www.yaobella.com/photo/picture/thrumb/1531986027791',
+    id: 192,
+    albumName: '2009 打台球'
+  },
+  {
+    url: 'http://www.yaobella.com/photo/picture/thrumb/1466759160305.jpg',
+    id: 139,
+    albumName: '我们的“表”妹'
+  },
+  {
+    url: 'http://www.yaobella.com/photo/picture/thrumb/1466869667918.jpg',
+    id: 194,
+    albumName: '全家福'
+  },
 ]
 export default life
 
@@ -71,126 +101,126 @@ export const blog = [
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_0.jpg',
     id: 1,
-    albumName: ''
+    albumName: '1'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_1.jpg',
     id: 2,
-    albumName: ''
+    albumName: '2'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_2.jpg',
     id: 3,
-    albumName: ''
+    albumName: '3'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_3.jpg',
     id: 4,
-    albumName: ''
+    albumName: '4'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_4.jpg',
     id: 5,
-    albumName: ''
+    albumName: '5'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_5.jpg',
     id: 6,
-    albumName: ''
+    albumName: '6'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_11.jpg',
     id: 7,
-    albumName: ''
+    albumName: '7'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_14.jpg',
     id: 8,
-    albumName: ''
+    albumName: '8'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_15.jpg',
     id: 9,
-    albumName: ''
+    albumName: '9'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_0.jpg',
-    id: 1,
-    albumName: ''
+    id: 11,
+    albumName: '0'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_1.jpg',
-    id: 2,
-    albumName: ''
+    id: 21,
+    albumName: '11'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_2.jpg',
-    id: 3,
-    albumName: ''
+    id: 13,
+    albumName: '12'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_3.jpg',
-    id: 4,
-    albumName: ''
+    id: 41,
+    albumName: '111'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_4.jpg',
-    id: 5,
-    albumName: ''
+    id: 51,
+    albumName: '111'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_5.jpg',
-    id: 6,
-    albumName: ''
+    id: 16,
+    albumName: '222'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_11.jpg',
-    id: 7,
-    albumName: ''
+    id: 71,
+    albumName: '333'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_14.jpg',
-    id: 8,
-    albumName: ''
+    id: 81,
+    albumName: '444'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_15.jpg',
-    id: 9,
-    albumName: ''
+    id: 19,
+    albumName: '555'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_3.jpg',
-    id: 4,
-    albumName: ''
+    id: 14,
+    albumName: '666'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_4.jpg',
-    id: 5,
-    albumName: ''
+    id: 15,
+    albumName: '34'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_5.jpg',
-    id: 6,
-    albumName: ''
+    id: 136,
+    albumName: '32'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_11.jpg',
-    id: 7,
-    albumName: ''
+    id: 157,
+    albumName: '33'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_14.jpg',
-    id: 8,
-    albumName: ''
+    id: 168,
+    albumName: '43'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_15.jpg',
-    id: 9,
-    albumName: ''
+    id: 179,
+    albumName: '54'
   },
   {
     url: 'http://www.yaobella.com/photo/picture/1467382340424/photo_1467382340424_15.jpg',
-    id: 9,
-    albumName: ''
+    id: 29,
+    albumName: '65'
   },
 ]

@@ -1,18 +1,17 @@
 <template>
   <div>
     <van-nav-bar :title="$route.query.title" fixed placeholder left-text="返回" left-arrow @click-left="onClickLeft" />
-    <van-list v-if="videoList" :finished="finished" finished-text="没有更多了">
-      <div class="videoItem" v-for="item in videoList" :key="item.id" @click="ClickVideo(item)">
-        <div class="left">
-          <div class="time">{{ item.time }}</div>
-          <div class="titleName">{{ item.title }}</div>
+    <van-list @click="ClickVideo" v-if="videoList" :finished="finished" finished-text="没有更多了">
+      <div class="videoItem" v-for="item in videoList" :key="item.id">
+        <div class="left" :data-videoid="item.id">
+          <div class="time" :data-videoid="item.id">{{ item.time }}</div>
+          <div class="titleName" :data-videoid="item.id">{{ item.title }}</div>
         </div>
-        <div class="center">
+        <div class="center" :data-videoid="item.id">
           {{ item.describe }}
         </div>
         <div class="right">
-
-          <van-image fit="contain" height="100%" width="100%" :src="item.img">
+          <van-image :data-videoid="item.id" fit="contain" height="100%" width="100%" :src="item.img">
             <template v-slot:loading>
               <van-loading type="spinner" size="60" />
             </template>
@@ -37,14 +36,21 @@ const VideoStore = useVideoStore()
 const { getVideoList } = VideoStore
 //渲染的视频数据
 const videoList = getVideoList(route.params.videoListId);
-// console.log(route.params.videoListId);
+console.log(route.params);
 
-const ClickVideo = (item) => {
-  // console.log(item);
+const ClickVideo = (e) => {
+  let videoid
+  if (e.target.tagName.toLowerCase() === 'img') {
+    videoid = e.target.parentElement.dataset.videoid
+  }
+  else {
+    videoid = e.target.dataset.videoid
+  }
+
   router.push({
     name: 'videoPlay',
-    params: { videoId: item.id },
-    query: { title: item.title, url: item.url }
+    params: { videoId: videoid },
+    query: { videoListId: route.params.videoListId }
   })
 }
 const onClickLeft = () => history.back();

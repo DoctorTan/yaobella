@@ -20,7 +20,7 @@ import { ref } from 'vue';
 const onChange = (index: string) => {
 
 
-  showNotify({ type: 'primary', message: '数据少,在收集中..', duration: 1500, });
+
 
   if (index === "home") {
     router.push({

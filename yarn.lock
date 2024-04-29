@@ -660,6 +660,11 @@
   dependencies:
     "brace-expansion" "^2.0.1"
 
+"mitt@^2.1.0":
+  "integrity" "sha512-ILj2TpLiysu2wkBbWjAmww7TkZb65aiQO+DkVdUTBpBXq+MHYiETENkKFMtsJZX1Lf4pe4QOrTSjIfUwN5lRdg=="
+  "resolved" "https://registry.npmmirror.com/mitt/-/mitt-2.1.0.tgz"
+  "version" "2.1.0"
+
 "mlly@^1.4.2", "mlly@^1.6.1":
   "integrity" "sha512-vLgaHvaeunuOXHSmEbZ9izxPx3USsk8KCQ8iC+aTlp5sKRSoZvwhHh5L9VbKSaVC6sJDqbyohIS76E2VmHIPAA=="
   "resolved" "https://registry.npmmirror.com/mlly/-/mlly-1.6.1.tgz"
@@ -975,6 +980,16 @@
   "resolved" "https://registry.npmmirror.com/vue-demi/-/vue-demi-0.14.7.tgz"
   "version" "0.14.7"
 
+"vue-observe-visibility@^2.0.0-alpha.1":
+  "integrity" "sha512-flFbp/gs9pZniXR6fans8smv1kDScJ8RS7rEpMjhVabiKeq7Qz3D9+eGsypncjfIyyU84saU88XZ0zjbD6Gq/g=="
+  "resolved" "https://registry.npmmirror.com/vue-observe-visibility/-/vue-observe-visibility-2.0.0-alpha.1.tgz"
+  "version" "2.0.0-alpha.1"
+
+"vue-resize@^2.0.0-alpha.1":
+  "integrity" "sha512-7+iqOueLU7uc9NrMfrzbG8hwMqchfVfSzpVlCMeJQe4pyibqyoifDNbKTZvwxZKDvGkB+PdFeKvnGZMoEb8esg=="
+  "resolved" "https://registry.npmmirror.com/vue-resize/-/vue-resize-2.0.0-alpha.1.tgz"
+  "version" "2.0.0-alpha.1"
+
 "vue-router@*", "vue-router@^4.3.2":
   "integrity" "sha512-hKQJ1vDAZ5LVkKEnHhmm1f9pMiWIBNGF5AwU67PdH7TyXCj/a4hTccuUuYCAMgJK6rO/NVYtQIEN3yL8CECa7Q=="
   "resolved" "https://registry.npmmirror.com/vue-router/-/vue-router-4.3.2.tgz"
@@ -998,6 +1013,15 @@
     "@volar/typescript" "2.2.0-alpha.10"
     "@vue/language-core" "2.0.14"
     "semver" "^7.5.4"
+
+"vue-virtual-scroller@^2.0.0-beta.8":
+  "integrity" "sha512-b8/f5NQ5nIEBRTNi6GcPItE4s7kxNHw2AIHLtDp+2QvqdTjVN0FgONwX9cr53jWRgnu+HRLPaWDOR2JPI5MTfQ=="
+  "resolved" "https://registry.npmmirror.com/vue-virtual-scroller/-/vue-virtual-scroller-2.0.0-beta.8.tgz"
+  "version" "2.0.0-beta.8"
+  dependencies:
+    "mitt" "^2.1.0"
+    "vue-observe-visibility" "^2.0.0-alpha.1"
+    "vue-resize" "^2.0.0-alpha.1"
 
 "vue@^2.6.14 || ^3.3.0", "vue@^3.0.0", "vue@^3.0.0-0 || ^2.6.0", "vue@^3.2.0", "vue@^3.2.25", "vue@^3.4.21", "vue@2 || 3", "vue@3.4.25":
   "integrity" "sha512-HWyDqoBHMgav/OKiYA2ZQg+kjfMgLt/T0vg4cbIF7JbXAjDexRf5JRg+PWAfrAkSmTd2I8aPSXtooBFWHB98cg=="

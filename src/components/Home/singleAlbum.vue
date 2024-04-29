@@ -15,9 +15,14 @@
     <van-list @click="clickImg" style="margin-bottom: 60px;" loading-text="加载中" v-model:loading="loading"
       :finished="finished" finished-text="没有更多了" @load="onLoad" offset="1500">
       <div class="img" v-for="(item, index) in list" :key="index">
-        <img :data-imgindex="index" :key="index" fit="contain" :src="item.url" />
+        <van-image :key="index" fit="contain" :src="item.url" :data-imgindex="index">
+          <template v-slot:loading>
+            <van-loading type="spinner" size="33" />
+          </template>
+        </van-image>
       </div>
     </van-list>
+
 
   </div>
 </template>
@@ -54,7 +59,7 @@ for (let i = 0; i < blog.length; i += chunkSize) {
   chunkedArray.push(blog.slice(i, i + chunkSize));
 }
 
-console.log(chunkedArray, 11);
+// console.log(chunkedArray, 11);
 
 
 
@@ -92,17 +97,23 @@ const onLoad = () => {
 
 const clickImg = (e: MouseEvent) => {
   const target = e.target as HTMLElement
-  const { imgindex } = target.dataset
+  // 通过target.parentElement获取绑定在vant组件的自定义属性
+  const { imgindex } = target.parentElement?.dataset as { imgindex?: string }
   showImagePreview({
     images: (list.value as ListItem[]).map(item => item.url),
     closeable: true,
-    startPosition: Number(imgindex),
-
+    startPosition: Number(imgindex)
   });
 }
+
+
 </script>
 
-<style >
+<style scoped>
+.van-image {
+  width: 375px;
+}
+
 .van-popup {
   max-height: 90vh;
 }
