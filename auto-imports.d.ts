@@ -7,4 +7,5 @@ export {}
 declare global {
   const showDialog: typeof import('vant/es')['showDialog']
   const showImagePreview: typeof import('vant/es')['showImagePreview']
+  const showNotify: typeof import('vant/es')['showNotify']
 }

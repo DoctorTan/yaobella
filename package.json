@@ -9,16 +9,29 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@types/postcss-pxtorem": "^6.0.3",
+    "@vueuse/core": "^10.9.0",
+    "lb-audio-v3": "^1.0.5",
+    "pinia": "^2.1.7",
     "vant": "^4.8.11",
-    "vue": "^3.4.21"
+    "vue": "^3.4.21",
+    "vue-router": "^4.3.2",
+    "vue-virtual-scroller": "^2.0.0-beta.8",
+    "xgplayer": "^3.0.16",
+    "xgplayer-music": "^3.0.16"
   },
   "devDependencies": {
+    "@types/node": "^20.12.7",
+    "@types/vue-router": "^2.0.0",
     "@vant/auto-import-resolver": "^1.1.0",
     "@vitejs/plugin-vue": "^5.0.4",
+    "postcss": "^8.4.38",
+    "postcss-pxtorem": "^6.1.0",
     "typescript": "^5.2.2",
     "unplugin-auto-import": "^0.17.5",
     "unplugin-vue-components": "^0.26.0",
     "vite": "^5.2.0",
+    "vite-plugin-compression": "^0.5.1",
     "vue-tsc": "^2.0.6"
   }
 }
